@@ -1,4 +1,4 @@
-const { savings } = require('./savings');
+const { savings } = require('../models/saving');
 
 const createSaving = (req, res) => {
   const { date, credentials, amount, title } = req.body;
