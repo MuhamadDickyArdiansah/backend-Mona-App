@@ -6,7 +6,7 @@ const savingsHandler = require('./handler');
 
 router.post('/', savingsHandler.createSaving);
 router.get('/', savingsHandler.getAllSavings);
-router.get('/:id', savingsHandler.getSavingById);
+router.get('/:credentials', savingsHandler.getSavingById);
 router.put('/:id', savingsHandler.updateSaving);
 router.delete('/:id', savingsHandler.deleteSaving);
 
